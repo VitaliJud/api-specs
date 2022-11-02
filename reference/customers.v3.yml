@@ -2655,12 +2655,12 @@ components:
         first_name:
           description: The first name of the customer.
           type: string
-          minLength: 1
+          minLength: 0
           maxLength: 100
         last_name:
           description: The last name of the customer.
           type: string
-          minLength: 1
+          minLength: 0
           maxLength: 100
         company:
           description: The company of the customer.
