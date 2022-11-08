@@ -2431,7 +2431,7 @@ components:
           description: Specifies the price of the item. This value can include or exclude tax, depending on the store setup.
     cart_PostVariant:
       type: object
-      title: cart_PostVariant
+      title: Item with variant
       x-internal: false
       properties:
         quantity:
@@ -2486,7 +2486,7 @@ components:
                 message: Happy Birthday
     cart_PostModifier:
       type: object
-      title: cart_PostModifier
+      title: Item with modifier
       properties:
         quantity:
           type: number
@@ -2669,7 +2669,7 @@ components:
           $ref: '#/components/schemas/cart_PostCustomItem'
     cart_PostCustomItem:
       type: array
-      title: cart_PostCustomItem
+      title: Custom item
       x-internal: false
       items:
         type: object
