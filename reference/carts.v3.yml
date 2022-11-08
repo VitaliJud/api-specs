@@ -2446,7 +2446,7 @@ components:
           description: Variant ID. Exists only in Catalog V3.
         name:
           type: string
-          description: 'Optionally, provide a value to override the product name.'
+          description: Optionally, provide a value to override the product name.
         gift_wrapping:
           type: object
           properties:
@@ -2497,7 +2497,7 @@ components:
           description: Optional price override.
         name:
           type: string
-          description: 'Optionally, provide a value to override the product name.'
+          description: Optionally, provide a value to override the product name.
         option_selections:
           type: array
           description: Needed for Catalog V2.
