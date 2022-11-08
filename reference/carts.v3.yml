@@ -1898,7 +1898,7 @@ components:
                 type: string
               list_price:
                 type: string
-                description: 'Specifies the price of the item. This value can include or exclude tax, depending on the setup of your store.'
+                description: Specifies the price of the item. This value can include or exclude tax, depending on the store setup.
         custom_items:
           type: array
           items:
@@ -1917,7 +1917,7 @@ components:
                 type: string
               list_price:
                 type: string
-                description: 'Specifies the price of the item. This value can include or exclude tax, depending on the setup of your store.'
+                description: Specifies the price of the item. This value can include or exclude tax, depending on the store setup.
       required:
         - physical_items
         - digital_items
@@ -2890,7 +2890,7 @@ components:
           type: string
         list_price:
           type: string
-          description: 'Specifies the price of the item. This value can include or exclude tax, depending on the setup of your store.'
+          description: Specifies the price of the item. This value can include or exclude tax, depending on the store setup.
     ItemCustomGet:
       type: object
       title: Item Custom
@@ -2914,7 +2914,7 @@ components:
           type: string
         list_price:
           type: string
-          description: 'Specifies the price of the item. This value can include or exclude tax, depending on the setup of your store.'
+          description: Specifies the price of the item. This value can include or exclude tax, depending on the store setup.
     cart_PostVariant:
       type: object
       title: cart_PostVariant
