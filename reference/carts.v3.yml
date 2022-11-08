@@ -1820,7 +1820,7 @@ components:
                     type: string
                     format: url
                   download_size:
-                    description: 'Specifies the combined download size of all files, in human-readable style, for example: 30MB.'
+                    description: 'Specifies the combined download size of all files in human-readable style; for example, `30MB`.'
                     type: string
             title: Item Digital
             type: object
@@ -2229,7 +2229,7 @@ components:
               type: string
               format: url
             download_size:
-              description: 'Combined download size, in human-readable style, for example: `30MB`.'
+              description: 'Specifies the combined download size of all files in human-readable style; for example, `30MB`.'
               type: string
       title: Item Digital
       x-internal: false
@@ -2413,7 +2413,7 @@ components:
               type: string
               format: url
             download_size:
-              description: 'Combined download size, in human-readable style, for example: `30MB`.'
+              description: 'Specifies the combined download size of all files in human-readable style; for example, `30MB`.'
               type: string
       title: Item Digital
       x-internal: false
