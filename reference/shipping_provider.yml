@@ -1699,6 +1699,12 @@ components:
                       type: string
                     value:
                       type: string
+              example: {
+                "27": {
+                  id: 27,
+                  value: 3
+                }
+              }
         destination:
           type: object
           title: Shipping Address
@@ -1746,6 +1752,12 @@ components:
                       type: string
                     value:
                       type: string
+              example: {
+                "1234": {
+                  id: 1234,
+                  value: checkbox_selection_1
+                }
+              }
         items:
           type: array
           items:
