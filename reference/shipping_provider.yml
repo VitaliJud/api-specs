@@ -1691,6 +1691,11 @@ components:
                 - COMMERCIAL
             form_fields:
               type: object
+              example:
+                '27':
+                  id: 27
+                  value: 3
+              description: 'If you have no form fields, send an empty object. '
               properties:
                 '':
                   type: object
@@ -1699,12 +1704,6 @@ components:
                       type: string
                     value:
                       type: string
-              example: {
-                "27": {
-                  id: 27,
-                  value: 3
-                }
-              }
         destination:
           type: object
           title: Shipping Address
@@ -1744,6 +1743,11 @@ components:
                 - COMMERCIAL
             form_fields:
               type: object
+              example:
+                '1234':
+                  id: 1234
+                  value: checkbox_selection_1
+              description: 'If you have no form fields, send an empty object.'
               properties:
                 '':
                   type: object
@@ -1752,12 +1756,6 @@ components:
                       type: string
                     value:
                       type: string
-              example: {
-                "1234": {
-                  id: 1234,
-                  value: checkbox_selection_1
-                }
-              }
         items:
           type: array
           items:
