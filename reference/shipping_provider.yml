@@ -1695,7 +1695,7 @@ components:
                 '27':
                   id: 27
                   value: 3
-              description: 'If you have no form fields, send an empty object. '
+              description: 'Custom form field. Empty object if no form fields exist.'
               properties:
                 '':
                   type: object
@@ -1747,7 +1747,7 @@ components:
                 '1234':
                   id: 1234
                   value: checkbox_selection_1
-              description: 'If you have no form fields, send an empty object.'
+              description: 'Custom form field. Empty object if no form fields exist.'
               properties:
                 '':
                   type: object
