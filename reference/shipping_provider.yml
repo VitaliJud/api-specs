@@ -1136,7 +1136,7 @@ components:
             properties:
               key:
                 type: string
-                description: The key associated with the product or product variant meta field
+                description: The key associated with the product or product variant meta field.
               value:
                 type: string
                 description: The value associated with the product or product variant meta field
