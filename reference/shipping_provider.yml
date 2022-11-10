@@ -1148,7 +1148,7 @@ components:
                 enum:
                   - product
                   - variant
-                description: Resource type associated with the product or product variant meta field. Currently the only values available are 'product' or 'variant'
+                description: Resource type associated with the product or product variant meta field. Currently, the only values available are 'product' or 'variant'.
               resource_id:
                 type: string
                 description: The resource id of the product or product variant meta field
