@@ -1896,7 +1896,7 @@ components:
                       type: string
                       enum:
                         - metafield
-                      description: Attribute type associated with the product or product variant meta field. Currently the only value for this is 'metafield'
+                      description: Attribute type associated with the product or product variant meta field. Currently, the only value for this is 'metafield'.
         customer:
           type: object
           title: Customer Details
