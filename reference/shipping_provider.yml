@@ -1907,7 +1907,7 @@ components:
               items:
                 type: object
                 title: Customer Group
-                description: The Group (if any) that this customer is in. This will be default to zero if the customer is not in a group or is a guest.
+                description: The Group (if any) that this customer is in. This will default to zero if the customer is not in a group or is a guest.
                 properties:
                   customer_group_id:
                     type: integer
