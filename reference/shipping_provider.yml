@@ -1328,7 +1328,7 @@ components:
           description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
         resource_type:
           type: string
-          description: Resource type associated with the product or product variant meta field. Currently the only values available are 'product' or 'variant'
+          description: Resource type associated with the product or product variant meta field. Currently, the only values available are 'product' or 'variant'.
           enum:
             - product
             - variant
