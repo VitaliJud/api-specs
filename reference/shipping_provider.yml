@@ -1336,7 +1336,7 @@ components:
           type: string
         attribute_type:
           type: string
-          description: Attribute type associated with the product or product variant meta field. Currently the only value for this is 'metafield'
+          description: Attribute type associated with the product or product variant meta field. Currently, the only value for this is 'metafield'.
           enum:
             - metafield
       title: Attribute Value
