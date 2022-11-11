@@ -684,7 +684,7 @@ components:
                         type: string
         zone_options:
           type: object
-          description: 'Optional, any zone specific request options declared by the carrier and configued by the merchant to retrieve rates'
+          description: Any zone-specific request options declared by the carrier and configured by the merchant to retrieve rates. Optional.
           title: Zone Options Instance
         connection_options:
           type: object
