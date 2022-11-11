@@ -1462,7 +1462,7 @@ components:
       title: Rate Options Schema
       x-internal: false
     KeyValuePairSchema:
-      description: 'An individual carrier defined field to display at checkout, along with any defaults and validation'
+      description: Options, ranges, defaults, and validation for a carrier-defined field that displays at checkout.
       type: object
       properties:
         code:
