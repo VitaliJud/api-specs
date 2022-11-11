@@ -1421,7 +1421,7 @@ components:
             description: A valid default value for this field
             type: string
           value_options:
-            description: 'For select type fields, the list of available options.'
+            description: The list of options available for `select` type fields.
             type: array
             items:
               type: string
