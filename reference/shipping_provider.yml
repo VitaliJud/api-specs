@@ -719,7 +719,7 @@ components:
       x-internal: false
     ConnectionOptionsInstance:
       type: object
-      description: 'Optional, any global request options declared by the carrier and configued by the merchant to retrieve rates'
+      description: Any global request options declared by the carrier and configured by the merchant to retrieve rates. Optional.
       title: Connection Options Instance
       x-internal: false
     RateOptionsInstance:
