@@ -284,9 +284,9 @@ paths:
                         phone: '707070707'
                         postal_code: '33333'
                         state_or_province: California
-                        form_fields: 
-                        - name: "test"
-                          value: "test"
+                        form_fields:
+                          - name: test
+                            value: test
                     authentication:
                       force_password_reset: true
                       new_password: string123
@@ -296,9 +296,9 @@ paths:
                     origin_channel_id: 1
                     channel_ids:
                       - 1
-                    form_fields: 
-                      - name: "test"
-                        value: "test"
+                    form_fields:
+                      - name: test
+                        value: test
         required: true
         x-examples: {}
         description: ''
@@ -361,7 +361,7 @@ paths:
                 $ref: '#/components/schemas/customer_Put'
             examples:
               example-1:
-                value: 
+                value:
                   - email: string
                     first_name: string
                     last_name: string
@@ -371,18 +371,18 @@ paths:
                     tax_exempt_category: string
                     customer_group_id: 0
                     id: 1
-                    addresses: 
-                    - address1: string
-                      address2: string
-                      address_type: string
-                      city: string
-                      company: string
-                      country_code: string
-                      first_name: string
-                      last_name: string
-                      phone: string
-                      postal_code: string
-                      state_or_province: string
+                    addresses:
+                      - address1: string
+                        address2: string
+                        address_type: string
+                        city: string
+                        company: string
+                        country_code: string
+                        first_name: string
+                        last_name: string
+                        phone: string
+                        postal_code: string
+                        state_or_province: string
                     authentication:
                       force_password_reset: true
                       new_password: string123
@@ -392,15 +392,15 @@ paths:
                     origin_channel_id: 1
                     channel_ids:
                       - 1
-                    form_fields: 
-                      - name: "test"
-                        value: "test"  
+                    form_fields:
+                      - name: test
+                        value: test
               example-2-form-fields:
                 value:
                   - id: 1
-                    form_fields: 
-                      - name: "test"
-                        value: "test"  
+                    form_fields:
+                      - name: test
+                        value: test
     delete:
       description: |-
         Deletes Customers.
@@ -567,7 +567,7 @@ paths:
               type: array
               items:
                 $ref: '#/components/schemas/address_Post'
-            examples: 
+            examples:
               example-1:
                 value:
                   - first_name: John
@@ -581,9 +581,9 @@ paths:
                     phone: '1234567890'
                     address_type: residential
                     customer_id: 11
-                    form_fields: 
-                      - name: "test"
-                        value: "test"
+                    form_fields:
+                      - name: test
+                        value: test
         required: true
         x-examples:
           application/json:
@@ -598,9 +598,9 @@ paths:
               phone: '1234567890'
               address_type: residential
               customer_id: 11
-              form_fields: 
-                - name: "test"
-                  value: "test"
+              form_fields:
+                - name: test
+                  value: test
       responses:
         '200':
           $ref: '#/components/responses/AddressCollectionResponsePostPut'
@@ -672,15 +672,15 @@ paths:
                     country_code: US
                     phone: '1234567890'
                     address_type: residential
-                    form_fields: 
-                      - name: "test"
-                        value: "test"
+                    form_fields:
+                      - name: test
+                        value: test
               example-2-form-fields:
                 value:
                   - id: 11
-                    form_fields: 
-                      - name: "test"
-                        value: "test"
+                    form_fields:
+                      - name: test
+                        value: test
         required: true
         x-examples:
           application/json:
@@ -1751,7 +1751,7 @@ components:
                     notes: string
                     tax_exempt_category: string
                     customer_group_id: 0
-                    addresses: 
+                    addresses:
                       - first_name: string
                         last_name: string
                         address1: Addr1
@@ -1764,14 +1764,15 @@ components:
                         address_type: residential
                         customer_id: 0
                         id: 0
-                        country: string 
+                        country: string
                     store_credit_amounts:
                       - amount: 43.15
                     accepts_product_review_abandoned_cart_emails: true
                     channel_ids:
                       - 1
-                    shopper_profile_id: "82511e54-4040-40fe-b742-2b25655f205b"
-                    segment_ids: ["5bb733a9-5491-47b3-9451-9ae8d6a6bc6b"]
+                    shopper_profile_id: 82511e54-4040-40fe-b742-2b25655f205b
+                    segment_ids:
+                      - 5bb733a9-5491-47b3-9451-9ae8d6a6bc6b
                 meta:
                   pagination:
                     total: 0
@@ -1868,8 +1869,8 @@ components:
                       type: array
                       items:
                         allOf:
-                          - $ref: "#/components/schemas/formFieldValue_Address"
-                        title: 'Customer Address Form Field Value'
+                          - $ref: '#/components/schemas/formFieldValue_Address'
+                        title: Customer Address Form Field Value
                   required:
                     - address1
                     - city
@@ -2100,8 +2101,8 @@ components:
                       type: array
                       items:
                         allOf:
-                          - $ref: "#/components/schemas/formFieldValue_Address"
-                        title: 'Customer Address Form Field Value'
+                          - $ref: '#/components/schemas/formFieldValue_Address'
+                        title: Customer Address Form Field Value
               meta:
                 type: object
           examples:
@@ -2271,6 +2272,15 @@ components:
                     type: string
                     date_created: '2018-11-13T21:42:06Z'
                     date_modified: '2018-11-14T16:46:23Z'
+                meta: {}
+            Example 1:
+              value:
+                data:
+                  - name: string
+                    type: string
+                    id: -2147483648
+                    date_modified: '2019-08-24T14:15:22Z'
+                    date_created: '2019-08-24T14:15:22Z'
                 meta: {}
     FormFieldValueCollectionResponse:
       description: ''
@@ -2740,7 +2750,7 @@ components:
         accepts_product_review_abandoned_cart_emails:
           type: boolean
           description: Determines if the customer is signed up to receive either product review or abandoned cart emails or receive both emails.
-        origin_channel_id: 
+        origin_channel_id:
           type: integer
           description: Channel ID of the customer that has created the form.
         channel_ids:
@@ -2806,13 +2816,15 @@ components:
           description: It determines if the customer is signed up to receive either product review or abandoned cart emails or receive both emails.
         store_credit_amounts:
           $ref: '#/components/schemas/CustomerStoredCreditAmounts'
-        origin_channel_id: 
+        origin_channel_id:
           type: integer
           description: Channel ID of the customer that has created the form.
         channel_ids:
           description: Array of channels the customer can access.
           type: array
-          example: [1,2]
+          example:
+            - 1
+            - 2
           items:
             type: integer
         form_fields:
@@ -2820,7 +2832,7 @@ components:
           description: |
             Array of form fields. Controlled by formfields parameter.
           items:
-            $ref: "#/components/schemas/formFieldValue"    
+            $ref: '#/components/schemas/formFieldValue'
       required:
         - email
         - first_name
@@ -2883,7 +2895,7 @@ components:
           description: It determines if the customer is signed up to receive either product review or abandoned cart emails or receive both emails.
         store_credit_amounts:
           $ref: '#/components/schemas/CustomerStoredCreditAmounts'
-        origin_channel_id: 
+        origin_channel_id:
           type: integer
           description: Channel ID of the customer that has created the form.
         channel_ids:
@@ -2896,7 +2908,7 @@ components:
           description: |
             Array of form fields. Controlled by formfields parameter.
           items:
-            $ref: "#/components/schemas/formFieldValue"    
+            $ref: '#/components/schemas/formFieldValue'
       required:
         - id
       x-internal: false
@@ -3087,12 +3099,12 @@ components:
           description: The country name of the customer address.
           type: string
         form_fields:
-                description: Array of form fields. Controlled by `formfields` parameter.
-                type: array
-                items:
-                  allOf:
-                    - $ref: "#/components/schemas/formFieldValue"
-                  title: 'Customer Address Form Field Value'
+          description: Array of form fields. Controlled by `formfields` parameter.
+          type: array
+          items:
+            allOf:
+              - $ref: '#/components/schemas/formFieldValue'
+            title: Customer Address Form Field Value
       required:
         - first_name
         - last_name
@@ -3174,7 +3186,7 @@ components:
           description: |
             Array of form fields. Controlled by formfields parameter.
           items:
-            $ref: "#/components/schemas/formFieldValue"  
+            $ref: '#/components/schemas/formFieldValue'
       required:
         - id
       x-examples:
@@ -3261,7 +3273,7 @@ components:
           description: |
             The address custom form field values
           items:
-            $ref: "#/components/schemas/formFieldValue"
+            $ref: '#/components/schemas/formFieldValue'
       required:
         - first_name
         - last_name
@@ -3377,9 +3389,9 @@ components:
         phone: '707070707'
         postal_code: '33333'
         state_or_province: California
-        form_fields: 
-          - name: "test"
-            value: "test"
+        form_fields:
+          - name: test
+            value: test
       type: object
       properties:
         first_name:
@@ -3441,8 +3453,8 @@ components:
           type: array
           items:
             allOf:
-              - $ref: "#/components/schemas/formFieldValue"
-            title: 'Customer Address Form Field Value'    
+              - $ref: '#/components/schemas/formFieldValue'
+            title: Customer Address Form Field Value
       required:
         - first_name
         - last_name
@@ -3450,7 +3462,7 @@ components:
         - city
         - country_code
       description: The `address` object for the `customer` object's `addresses` array.
-      x-internal: false  
+      x-internal: false
     customerAuthentication_PostPut:
       title: customerAuthentication_PostPut
       allOf:
@@ -3502,7 +3514,7 @@ components:
                 - green
                 - black
               items:
-                type: string      
+                type: string
     formFieldValue_Customer:
       title: Customer Form Field Value
       type: object
@@ -3530,7 +3542,7 @@ components:
               items:
                 type: string
         customer_id:
-          type: integer      
+          type: integer
     formFieldValue_Address:
       title: Customer Address Form Field Value
       type: object
@@ -3564,8 +3576,8 @@ components:
       x-internal: false
     formFieldValue_Full:
       oneOf:
-        - $ref: "#/components/schemas/formFieldValue_Customer"
-        - $ref: "#/components/schemas/formFieldValue_Address"
+        - $ref: '#/components/schemas/formFieldValue_Customer'
+        - $ref: '#/components/schemas/formFieldValue_Address'
       title: formFieldValue_Full
       x-internal: false
     consent_Full:

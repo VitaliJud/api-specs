@@ -4882,6 +4882,29 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateConsignmentRequest'
+            examples:
+              Example 1:
+                value:
+                  address:
+                    first_name: string
+                    last_name: string
+                    email: string
+                    company: string
+                    address1: string
+                    address2: string
+                    city: string
+                    state_or_province: string
+                    state_or_province_code: string
+                    country_code: string
+                    postal_code: string
+                    phone: '12125685555'
+                    custom_fields:
+                      - field_id: string
+                        field_value: string
+                  line_items:
+                    - item_id: string
+                      quantity: 0
+                  shipping_option_id: string
         required: true
       responses:
         '200':
@@ -8920,6 +8943,28 @@ components:
           description: ''
       description: One or more of these three fields are mandatory. `address` and `line_items` can be updated in one request. `shipping_option_id` has to be updated in a separate request since changing the address or line items can invalidate the previously available shipping options.
       x-internal: false
+      x-examples:
+        Example 1:
+          address:
+            first_name: string
+            last_name: string
+            email: string
+            company: string
+            address1: string
+            address2: string
+            city: string
+            state_or_province: string
+            state_or_province_code: string
+            country_code: string
+            postal_code: string
+            phone: string
+            custom_fields:
+              - field_id: string
+                field_value: string
+          line_items:
+            - item_id: string
+              quantity: 1
+          shipping_option_id: string
     CouponCodeRequest:
       title: Coupon Code Request
       type: object
