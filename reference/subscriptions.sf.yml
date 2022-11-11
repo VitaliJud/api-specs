@@ -11,7 +11,10 @@ info:
     * [Working with Storefront APIs](/api-docs/cart-and-checkout/working-sf-apis)
   version: ""
 servers:
-- url: https://{$$.env.store_domain}
+  - url: 'https://{store_domain}/api/storefront'
+    variables:
+      store_domain:
+        default: yourstore.example.com
 tags:
 - name: Subscription
 paths:

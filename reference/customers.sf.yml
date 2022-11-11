@@ -4,7 +4,10 @@ info:
   title: Storefront Customers
   description: Manage customers and data via front-end JavaScript on BigCommerce stencil powered storefronts.
 servers:
-  - url: 'https://{$$.env.store_domain}/api/storefront'
+  - url: 'https://{store_domain}/api/storefront'
+    variables:
+      store_domain:
+        default: yourstore.example.com
 tags:
   - name: Customers
 paths:
