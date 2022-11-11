@@ -1607,7 +1607,7 @@ components:
             title: Message
             description: A simple string/type response for returning information.
       title: Check Connection Options Response Payload
-      description: The response recieved back from the Shipping Provider connection check this allows the store to understand if the connection was successful.
+      description: The response received back from the Shipping Provider connection check allows the store to understand if the connection was successful.
       x-internal: false
     DateRange:
       type: object
