@@ -723,7 +723,7 @@ components:
       title: Connection Options Instance
       x-internal: false
     RateOptionsInstance:
-      description: 'Optional, any checkout specific request options to retrieve rates'
+      description: Any checkout-specific request options to retrieve rates. Optional.
       type: array
       items:
         type: object
