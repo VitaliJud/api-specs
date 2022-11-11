@@ -1394,7 +1394,7 @@ components:
       description: A set of carrier-specific fields that will be displayed to shoppers at checkout.
       type: array
       items:
-        description: 'An individual carrier-defined field to display at checkout, along with any defaults and validation.'
+        description: Options, ranges, defaults, and validation for a carrier-defined field that displays at checkout.
         type: object
         properties:
           code:
