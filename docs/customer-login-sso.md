@@ -1,6 +1,6 @@
 # Customer Login SSO
 
-* **Host**: {$$.env.store_domain}/graphql
+* **Host**: {store_domain}/graphql
 * **Protocols**:`https`
 * **Accepts**: `application/json`
 * **Responds With**: `application/json`
