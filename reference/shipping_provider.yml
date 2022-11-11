@@ -1689,21 +1689,6 @@ components:
               enum:
                 - RESIDENTIAL
                 - COMMERCIAL
-            form_fields:
-              type: object
-              example:
-                '27':
-                  id: 27
-                  value: 3
-              description: 'Custom form field. Empty object if no form fields exist.'
-              properties:
-                '':
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                    value:
-                      type: string
         destination:
           type: object
           title: Shipping Address
