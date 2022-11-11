@@ -4761,7 +4761,7 @@ paths:
                     state_or_province_code: string
                     country_code: string
                     postal_code: string
-                    phone: '12125685555'
+                    phone: string
                     custom_fields:
                       - field_id: string
                         field_value: string
