@@ -746,7 +746,7 @@ components:
         customer_group_name:
           type: string
       title: Customer Group
-      description: The Group (if any) that this customer is in. This will be default to zero if the customer is not in a group or is a guest.
+      description: The Group (if any) that this customer is in. The value will default to zero if the customer is not in a group or is a guest.
       x-internal: false
     KeyValuePair:
       type: object
