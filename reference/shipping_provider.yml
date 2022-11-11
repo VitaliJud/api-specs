@@ -1684,7 +1684,7 @@ components:
               maxLength: 2
               example: US
             address_type:
-              description: 'Optional, defaults to residential'
+              description: 'Optional, defaults to residential.'
               type: string
               enum:
                 - RESIDENTIAL
