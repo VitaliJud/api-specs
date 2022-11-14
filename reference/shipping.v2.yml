@@ -1194,6 +1194,7 @@ paths:
                       - fedex
                       - royalmail
                       - upsready
+                      - freeshipping
                   settings:
                     description: 'Depends on the shipping-method type. See the [supported settings object](#supported-settings).'
                     type: object
