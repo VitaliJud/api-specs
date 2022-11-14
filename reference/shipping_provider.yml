@@ -8,7 +8,7 @@ info:
     ## Authentication
     This specification file describes API requests BigCommerce will make to a registered shipping carrierʼs server to check connection options and retrieve rates. As such, the method of authentication is determined by the carrier server.
 
-    ## Subresources
+    ## Sub-resources
 
     ### Check Connection Options
     The Check Connection Options request is made by BigCommerce when checking for available shipping options. Each Shipping Provider will have different configurations for the payload.
@@ -507,7 +507,7 @@ components:
               type: array
               items:
                 type: object
-                description: A cart item along with it's shipping specific attributes
+                description: A cart item along with its shipping-specific attributes.
                 title: Rate Request Item
                 properties:
                   sku:
@@ -905,7 +905,7 @@ components:
         - messages
         - carrier_quotes
       title: Rate Response Payload
-      description: 'The response from the Shipping Service, will contain zero to many quotes.'
+      description: The response from the Shipping Service. Contains zero or more quotes.
       x-internal: false
     CarrierQuoteObject:
       type: object
@@ -1557,7 +1557,7 @@ components:
           maxLength: 2
           example: US
         address_type:
-          description: 'Optional, defaults to residential'
+          description: Defaults to residential. Optional.
           type: string
           enum:
             - RESIDENTIAL
@@ -1571,7 +1571,7 @@ components:
       properties:
         connection_options:
           type: object
-          description: 'Optional, any global request options declared by the carrier and configured by the merchant to retrieve rates.'
+          description: Any global request options declared by the carrier and configured by the merchant to retrieve rates. Optional.
           title: Connection Options Instance
       required:
         - connection_options
@@ -1684,7 +1684,7 @@ components:
               maxLength: 2
               example: US
             address_type:
-              description: 'Optional, defaults to residential.'
+              description: Defaults to residential. Optional.
               type: string
               enum:
                 - RESIDENTIAL
@@ -1721,7 +1721,7 @@ components:
               maxLength: 2
               example: US
             address_type:
-              description: 'Optional, defaults to residential.'
+              description: Defaults to residential. Optional.
               type: string
               enum:
                 - RESIDENTIAL
@@ -1745,7 +1745,7 @@ components:
           type: array
           items:
             type: object
-            description: A cart item along with it's shipping specific attributes
+            description: A cart item along with its shipping-specific attributes.
             title: Rate Request Item
             properties:
               sku:
