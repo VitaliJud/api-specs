@@ -82,7 +82,7 @@ paths:
                               - text: veniam
                                 type: ERROR
                             description: el
-                            rate_id: 'n'
+                            rate_id: n
                             discounted_cost:
                               currency: VQD
                               amount: 16810732.187082157
