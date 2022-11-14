@@ -1730,12 +1730,13 @@ components:
               type: object
               example:
                 '1234':
-                  id: 1234
+                  id: '1234'
                   value: checkbox_selection_1
-              description: 'Custom form field. Empty object if no form fields exist.'
+              description: Describes custom form fields. Empty when no custom fields exist. 
               properties:
                 '':
                   type: object
+                  description: The ID and value of a custom form field.
                   properties:
                     id:
                       type: string
