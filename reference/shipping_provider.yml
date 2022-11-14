@@ -6,7 +6,7 @@ info:
     Implement endpoints consumed by BigCommerce for custom shipping integrations. To learn more, see [Shipping Provider API Overview](/api-docs/store-management/shipping/shipping-provider-api).
 
     ## Authentication
-    This specification file describes API requests BigCommerce will make to a registered shipping carrier's server to check connection options and retrieve rates. As such, the method of authentication is determined by the carrier's server.
+    This specification file describes API requests BigCommerce will make to a registered shipping carrierʼs server to check connection options and retrieve rates. As such, the method of authentication is determined by the carrier server.
 
     ## Subresources
 
@@ -37,7 +37,7 @@ paths:
   /rate:
     post:
       description: |-
-        Request shipping rates. BigCommerce sends a request for shipping quotes to the shipping provider's URL. The shipping provider responds with shipping quotes.
+        Request shipping rates. BigCommerce sends a request for shipping quotes to the shipping provider URL. The shipping provider responds with shipping quotes.
 
 
 
@@ -358,7 +358,7 @@ paths:
   /check_connection_options:
     post:
       description: |-
-        Validate connection options. BigCommerce sends a request to the shipping provider's URL in order to check a merchant's connection credentials. The shipping provider sends a response indicating whether a merchant has valid credentials. 
+        Validate connection options. BigCommerce sends a request to the shipping provider URL to check a merchantʼs connection credentials. The shipping provider sends a response indicating whether a merchant has valid credentials. 
 
 
 
