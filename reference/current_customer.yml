@@ -1,4 +1,4 @@
-openapi: 3.0.1
+openapi: '3.0.1'
 info:
   title: Current Customer
   description: |-
@@ -35,7 +35,7 @@ paths:
         - name: app_client_id
           in: query
           required: true
-          description: 'This is your application''s client ID, which is obtained during application registration in the Developer Portal.'
+          description: This is your applicationʼs client ID, which is obtained during application registration in the Developer Portal.
           schema:
             type: string
       responses:
@@ -63,7 +63,7 @@ paths:
                         example: '"6"'
                   iss:
                     type: string
-                    description: 'Indicates the token’s issuer. This is your application’s client ID, which is obtained during application registration in Developer Portal.'
+                    description: Indicates the token’s issuer. This is your application’s client ID, which is obtained during application registration in Developer Portal.
                     example: '"bc/apps"'
                   sub:
                     type: string
@@ -83,7 +83,7 @@ paths:
                     example: 1
                   aud:
                     type: string
-                    description: The "aud" (audience) claim identifies the recipients that the JWT is intended for. This should match the *App Client ID* and the `application_id`.
+                    description: 'The "aud" (audience) claim identifies the recipients that the JWT is intended for. This should match the *App Client ID* and the `application_id`.'
                     example: '"6sv16tfx3j5gsopm42ss5dd67g2srvq"'
                   application_id:
                     type: string
