@@ -1,4 +1,4 @@
-openapi: 3.0.1
+openapi: '3.0.1'
 info:
   version: Storefront
   title: Storefront Carts
@@ -22,7 +22,6 @@ paths:
         Returns a *Cart*.
 
         <!-- theme: info -->
-
         > #### Note
         > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
