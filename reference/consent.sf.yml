@@ -50,7 +50,7 @@ paths:
         Once set, consent preferences will be saved as a cookie for guest shoppers. Consent preferences will be persisted to a shopper's account to be used for future sessions once they have logged in. Consent preferences can also be managed using the [Customer Consent](/api-reference/store-management/customers-v3/customer-consent/) V3 endpoint.   
 
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
       operationId: postConsent
     parameters: []
 components:

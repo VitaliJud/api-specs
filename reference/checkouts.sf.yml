@@ -31,7 +31,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsByCheckoutIdGet
       parameters:
@@ -225,7 +225,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsByCheckoutIdPut
       parameters:
@@ -370,7 +370,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsCartsItemsItemIdByCheckoutIdAndCartIdPut
       parameters:
@@ -523,7 +523,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsCartsItemsItemIdByCheckoutIdAndCartIdDelete
       parameters:
@@ -781,7 +781,7 @@ paths:
         > #### Note
         > * The `email` property is only required if the customer is a guest shopper. Otherwise, it is set automatically.
         > * Sending `email` property as a payload in POST request triggers the abandoned cart notification process.
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsBillingAddressByCheckoutIdPost
       parameters:
@@ -930,7 +930,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsBillingAddressByCheckoutIdAndAddressIdPut
       parameters:
@@ -1207,7 +1207,7 @@ paths:
 
         <!-- theme: info --> 
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsConsignmentsByCheckoutIdPost
       parameters:
@@ -1367,7 +1367,7 @@ paths:
         <!-- theme: info --> 
         > #### Note
         > * You cannot pass both an `address` and a `shippingOptionId` because the shipping option may not be available for the new address 
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsConsignmentsByCheckoutIdAndConsignmentIdPut
       parameters:
@@ -1519,7 +1519,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsConsignmentsByCheckoutIdAndConsignmentIdDelete
       parameters:
@@ -1663,7 +1663,7 @@ paths:
         > * *Gift Certificates* are treated as a payment methods.
         > * You are not able to purchase a gift certificate with a gift certificate.
         > * The rate limit is 20/hour (only for unique gift-certificate codes).
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsGiftCertificatesByCheckoutIdPost
       parameters:
@@ -1813,7 +1813,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsGiftCertificatesByCheckoutIdAndGiftCertificateCodeDelete
       parameters:
@@ -1847,7 +1847,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsCouponsByCheckoutIdPost
       parameters:
@@ -1994,7 +1994,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsCouponsByCheckoutIdAndCouponCodeDelete
       parameters:
@@ -2238,8 +2238,8 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
-        > * The Send a Test Request feature is not currently supported for this endpoint.  .
+        > * Substitute your storefront domain for `yourstore.example.com`. 
+        > * The Send a Test Request feature is not currently supported for this endpoint.
       operationId: CheckoutStoreCreditAdd
       parameters:
         - name: checkoutId
@@ -2263,7 +2263,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: CheckoutsStoreCreditRemove
       parameters:
@@ -2289,7 +2289,7 @@ paths:
 
         <!-- theme: info -->
         > #### Note
-        > * The `yourstore.example.com` is the store domain specific to your storefront. 
+        > * Substitute your storefront domain for `yourstore.example.com`. 
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       operationId: checkoutSpamProtection
       parameters:
