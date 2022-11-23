@@ -1,74 +1,53 @@
 openapi: 3.0.0
 info:
-  version: ""
+  version: ''
   title: Shipping Providers
-  description: >-
-    Implement endpoints consumed by BigCommerce for custom shipping
-    integrations. To learn more, see [Shipping Provider API
-    Overview](/api-docs/store-management/shipping/shipping-provider-api).
-
+  description: |-
+    Implement endpoints consumed by BigCommerce for custom shipping integrations. To learn more, see [Shipping Provider API Overview](/api-docs/store-management/shipping/shipping-provider-api).
 
     ## Authentication
-
     This specification file describes API requests BigCommerce will make to a registered shipping carrier's server to check connection options and retrieve rates. As such, the method of authentication is determined by the carrier's server.
-
 
     ## Subresources
 
-
     ### Check Connection Options
-
     The Check Connection Options request is made by BigCommerce when checking for available shipping options. Each Shipping Provider will have different configurations for the payload.
 
-
     ### Rate
-
     The Rate request is made by BigCommerce to get shipping quotes from the provider.
-
 
     ## Additional Information
 
-
     **Webhooks**
-
     - [Shipment](/api-docs/store-management/webhooks/webhook-events#shipment)
 
-
     **Related API Resources**
-
     - [Shipping Provider](/api-reference/store-management/shipping-provider-api)
-
     - [Shipping V2 API](/api-reference/shipping/shipping-api)
-  termsOfService: ""
+  termsOfService: ''
 paths:
   /rate:
     post:
-      description: >-
-        Request shipping rates. BigCommerce sends a request for shipping quotes
-        to the shipping provider's URL. The shipping provider responds with
-        shipping quotes.
+      description: |-
+        Request shipping rates. BigCommerce sends a request for shipping quotes to the shipping provider's URL. The shipping provider responds with shipping quotes.
 
-
-        
-
-        > #### Note
-
-        > * Substitute the host and path specific to the shipping provider for `your_app.example.com` and `rate`. 
+        > #### Note:
+        > * Substitute the host and path specific to the shipping provider for `your_app.example.com` and `rate`.  
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/RateRequestPayload"
+              $ref: '#/components/schemas/RateRequestPayload'
         description: Rate request object
         required: true
       responses:
-        "200":
+        '200':
           description: Quote response
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RateResponsePayload"
+                $ref: '#/components/schemas/RateResponsePayload'
               examples:
                 response:
                   value:
@@ -93,16 +72,16 @@ paths:
                               - text: veniam
                                 type: ERROR
                             description: el
-                            rate_id: n
+                            rate_id: 'n'
                             discounted_cost:
                               currency: VQD
                               amount: 16810732.187082157
-                            dispatch_date: 1947-07-10
+                            dispatch_date: '1947-07-10'
                             transit_time:
                               units: DAYS
                               duration: 74
                           - code: GND
-                            display_name: ""
+                            display_name: ''
                             cost:
                               currency: PRZ
                               amount: 85659359.530116
@@ -122,7 +101,7 @@ paths:
                             discounted_cost:
                               currency: XRQ
                               amount: 69218406.22440869
-                            dispatch_date: 1954-03-05
+                            dispatch_date: '1954-03-05'
                             transit_time:
                               units: HOURS
                               duration: 21
@@ -140,23 +119,23 @@ paths:
                                 type: INFO
                               - text: dolor
                                 type: ERROR
-                              - text: "ex "
+                              - text: 'ex '
                                 type: ERROR
-                            description: "ullamco "
-                            rate_id: ""
+                            description: 'ullamco '
+                            rate_id: ''
                             discounted_cost:
                               currency: CKD
                               amount: 18401337.766514115
-                            dispatch_date: 1993-06-23
+                            dispatch_date: '1993-06-23'
                             transit_time:
                               units: HOURS
                               duration: 54
                         carrier_info:
-                          code: ""
+                          code: ''
                           display_name: c
                       - quotes:
                           - code: GND
-                            display_name: "labore "
+                            display_name: 'labore '
                             cost:
                               currency: OHQ
                               amount: 63679444.026082255
@@ -174,7 +153,7 @@ paths:
                             discounted_cost:
                               currency: UBE
                               amount: 40327578.11995282
-                            dispatch_date: 1943-09-25
+                            dispatch_date: '1943-09-25'
                             transit_time:
                               units: DAYS
                               duration: 10
@@ -187,17 +166,17 @@ paths:
                               - text: cillum a
                                 type: INFO
                             description: nisi
-                            rate_id: ""
+                            rate_id: ''
                             discounted_cost:
                               currency: VFS
                               amount: 86177946.62739782
-                            dispatch_date: 1999-01-13
+                            dispatch_date: '1999-01-13'
                             transit_time:
                               units: DAYS
                               duration: 11
                         carrier_info:
                           code: consect
-                          display_name: "eiusmod "
+                          display_name: 'eiusmod '
                       - quotes:
                           - code: GND
                             display_name: ullamc
@@ -220,7 +199,7 @@ paths:
                             discounted_cost:
                               currency: NPA
                               amount: 72743924.13626081
-                            dispatch_date: 2006-01-17
+                            dispatch_date: '2006-01-17'
                             transit_time:
                               units: BUSINESS_DAYS
                               duration: 52
@@ -232,14 +211,14 @@ paths:
                             messages:
                               - text: ex
                                 type: WARNING
-                              - text: "ipsum "
+                              - text: 'ipsum '
                                 type: WARNING
-                            description: ""
+                            description: ''
                             rate_id: aute c
                             discounted_cost:
                               currency: SJL
                               amount: 60745150.4084129
-                            dispatch_date: 1976-06-19
+                            dispatch_date: '1976-06-19'
                             transit_time:
                               units: DAYS
                               duration: 69
@@ -249,14 +228,14 @@ paths:
                               currency: SUR
                               amount: 97146769.48560241
                             messages:
-                              - text: "Lorem "
+                              - text: 'Lorem '
                                 type: INFO
                             description: de
                             rate_id: fu
                             discounted_cost:
                               currency: PCP
                               amount: 99728805.8108871
-                            dispatch_date: 1962-05-18
+                            dispatch_date: '1962-05-18'
                             transit_time:
                               units: DAYS
                               duration: 10
@@ -279,7 +258,7 @@ paths:
                             discounted_cost:
                               currency: HMF
                               amount: 98693839.53819382
-                            dispatch_date: 2010-08-15
+                            dispatch_date: '2010-08-15'
                             transit_time:
                               units: HOURS
                               duration: 31
@@ -289,20 +268,20 @@ paths:
                               currency: TTO
                               amount: 65094224.57995142
                             messages:
-                              - text: "ut "
+                              - text: 'ut '
                                 type: INFO
                             description: labo
                             rate_id: anim ma
                             discounted_cost:
                               currency: ZMA
                               amount: 57479313.52475042
-                            dispatch_date: 2008-10-24
+                            dispatch_date: '2008-10-24'
                             transit_time:
                               units: DAYS
                               duration: 55
                         carrier_info:
                           code: dol
-                          display_name: "commodo "
+                          display_name: 'commodo '
                       - quotes:
                           - code: GND
                             display_name: sed
@@ -312,18 +291,18 @@ paths:
                             messages:
                               - text: i
                                 type: ERROR
-                              - text: "dolore "
+                              - text: 'dolore '
                                 type: WARNING
                               - text: ut
                                 type: INFO
                               - text: nos
                                 type: ERROR
-                            description: ""
+                            description: ''
                             rate_id: c
                             discounted_cost:
                               currency: QGD
                               amount: 81757709.40827666
-                            dispatch_date: 1999-11-11
+                            dispatch_date: '1999-11-11'
                             transit_time:
                               units: HOURS
                               duration: 6
@@ -337,7 +316,7 @@ paths:
                                 type: ERROR
                               - text: an
                                 type: WARNING
-                              - text: "Duis "
+                              - text: 'Duis '
                                 type: ERROR
                               - text: ipsum
                                 type: WARNING
@@ -348,7 +327,7 @@ paths:
                             discounted_cost:
                               currency: YYL
                               amount: 11005656.662449125
-                            dispatch_date: 1980-05-16
+                            dispatch_date: '1980-05-16'
                             transit_time:
                               units: HOURS
                               duration: 32
@@ -368,33 +347,28 @@ paths:
       operationId: requestShippingRates
   /check_connection_options:
     post:
-      description: >-
-        Validate connection options. BigCommerce sends a request to the shipping
-        provider's URL in order to check a merchant's connection credentials.
-        The shipping provider sends a response indicating whether a merchant has
-        valid credentials. 
+      description: |-
+        Validate connection options. BigCommerce sends a request to the shipping provider's URL in order to check a merchant's connection credentials. The shipping provider sends a response indicating whether a merchant has valid credentials. 
 
 
-        
 
         > #### Note
-
-        > * Substitute the host and path specific to the shipping provider for `your_app.example.com` and `check_connection_options`.  
+        > * Substitute the host and path specific to the shipping provider for `your_app.example.com` and `check_connection_options`.   
         > * The Send a Test Request feature is not currently supported for this endpoint.  
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/CheckConnectionOptionsRequestPayload"
+              $ref: '#/components/schemas/CheckConnectionOptionsRequestPayload'
         description: Check connection options request
         required: true
       responses:
-        "200":
+        '200':
           description: Check connection options response
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/CheckConnectionOptionsResponsePayload"
+                $ref: '#/components/schemas/CheckConnectionOptionsResponsePayload'
               examples:
                 response:
                   value:
@@ -417,7 +391,7 @@ x-stoplight:
     includeDownloadLink: true
     showModels: false
 servers:
-  - url: https://your_app.example.com
+  - url: 'https://your_app.example.com'
 components:
   schemas:
     RateRequestPayload:
@@ -426,16 +400,14 @@ components:
       description: Payload sent off to a Shipping Provider in order to get quotes.
       properties:
         base_options:
-          $ref: "#/components/schemas/BaseOptions"
+          $ref: '#/components/schemas/BaseOptions'
         zone_options:
           type: object
-          description: Optional, any zone specific request options declared by the carrier
-            and configued by the merchant to retrieve rates
+          description: 'Optional, any zone specific request options declared by the carrier and configued by the merchant to retrieve rates'
           title: Zone Options Instance
         connection_options:
           type: object
-          description: Optional, any global request options declared by the carrier and
-            configued by the merchant to retrieve rates
+          description: 'Optional, any global request options declared by the carrier and configued by the merchant to retrieve rates'
           title: Connection Options Instance
       required:
         - base_options
@@ -472,7 +444,7 @@ components:
                 zip:
                   type: string
                   maxLength: 20
-                  example: "94105"
+                  example: '94105'
                 city:
                   type: string
                   maxLength: 50
@@ -487,7 +459,7 @@ components:
                   maxLength: 2
                   example: US
                 address_type:
-                  description: Optional, defaults to residential
+                  description: 'Optional, defaults to residential'
                   type: string
                   enum:
                     - RESIDENTIAL
@@ -509,7 +481,7 @@ components:
                 zip:
                   type: string
                   maxLength: 20
-                  example: "94105"
+                  example: '94105'
                 city:
                   type: string
                   maxLength: 50
@@ -524,7 +496,7 @@ components:
                   maxLength: 2
                   example: US
                 address_type:
-                  description: Optional, defaults to residential
+                  description: 'Optional, defaults to residential'
                   type: string
                   enum:
                     - RESIDENTIAL
@@ -616,7 +588,7 @@ components:
                     properties:
                       currency:
                         type: string
-                        pattern: ^[A-Z]{3,3}$
+                        pattern: '^[A-Z]{3,3}$'
                       amount:
                         type: number
                         minimum: 0
@@ -630,7 +602,7 @@ components:
                     properties:
                       currency:
                         type: string
-                        pattern: ^[A-Z]{3,3}$
+                        pattern: '^[A-Z]{3,3}$'
                       amount:
                         type: number
                         minimum: 0
@@ -641,9 +613,7 @@ components:
                     type: number
                     format: int32
                   attributes:
-                    description: A list of arbitrary properties stored as part of the
-                      product or product variant meta fields. These consist of
-                      public fields specific to the carrier integration.
+                    description: A list of arbitrary properties stored as part of the product or product variant meta fields. These consist of public fields specific to the carrier integration.
                     type: array
                     items:
                       type: object
@@ -657,22 +627,13 @@ components:
                           description: The value associated with the meta field
                         namespace:
                           type: string
-                          description: The namespace associated with
-                            product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield)
-                            or product variant
-                            (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield)
-                            meta fields. The meta field namespace should be
-                            saved under this format
-                            `shipping_carrier_{yourCarrierId}` otherwise it will
-                            not be recognized as an attribute.
+                          description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
                         resource_type:
                           type: string
                           enum:
                             - product
                             - variant
-                          description: Resource type associated with the meta field.
-                            Currently the only values available are 'product' or
-                            'variant'
+                          description: Resource type associated with the meta field. Currently the only values available are 'product' or 'variant'
                         resource_id:
                           type: string
                           description: The resource id of the meta field
@@ -680,9 +641,7 @@ components:
                           type: string
                           enum:
                             - metafield
-                          description: Attribute type associated with the product or
-                            product variant meta field. Currently the only value
-                            for this is 'metafield'
+                          description: Attribute type associated with the product or product variant meta field. Currently the only value for this is 'metafield'
             customer:
               type: object
               title: Customer Details
@@ -693,9 +652,7 @@ components:
                   items:
                     type: object
                     title: Customer Group
-                    description: The Group (if any) that this customer is in. This will be
-                      default to zero if the customer is not in a group or is a
-                      guest.
+                    description: The Group (if any) that this customer is in. This will be default to zero if the customer is not in a group or is a guest.
                     properties:
                       customer_group_id:
                         type: integer
@@ -725,13 +682,11 @@ components:
                         type: string
         zone_options:
           type: object
-          description: Optional, any zone specific request options declared by the carrier
-            and configued by the merchant to retrieve rates
+          description: 'Optional, any zone specific request options declared by the carrier and configued by the merchant to retrieve rates'
           title: Zone Options Instance
         connection_options:
           type: object
-          description: Optional, any global request options declared by the carrier and
-            configued by the merchant to retrieve rates
+          description: 'Optional, any global request options declared by the carrier and configued by the merchant to retrieve rates'
           title: Connection Options Instance
       required:
         - base_options
@@ -749,8 +704,7 @@ components:
               customer_group_name:
                 type: string
             title: Customer Group
-            description: The Group (if any) that this customer is in. This will be default
-              to zero if the customer is not in a group or is a guest.
+            description: The Group (if any) that this customer is in. This will be default to zero if the customer is not in a group or is a guest.
         customer_id:
           type: integer
       title: Customer Details
@@ -758,18 +712,16 @@ components:
       x-internal: false
     ZoneOptionsInstance:
       type: object
-      description: Optional, any zone specific request options declared by the carrier and
-        configued by the merchant to retrieve rates
+      description: 'Optional, any zone specific request options declared by the carrier and configued by the merchant to retrieve rates'
       title: Zone Options Instance
       x-internal: false
     ConnectionOptionsInstance:
       type: object
-      description: Optional, any global request options declared by the carrier and
-        configued by the merchant to retrieve rates
+      description: 'Optional, any global request options declared by the carrier and configued by the merchant to retrieve rates'
       title: Connection Options Instance
       x-internal: false
     RateOptionsInstance:
-      description: Optional, any checkout specific request options to retrieve rates
+      description: 'Optional, any checkout specific request options to retrieve rates'
       type: array
       items:
         type: object
@@ -792,8 +744,7 @@ components:
         customer_group_name:
           type: string
       title: Customer Group
-      description: The Group (if any) that this customer is in. This will be default to
-        zero if the customer is not in a group or is a guest.
+      description: The Group (if any) that this customer is in. This will be default to zero if the customer is not in a group or is a guest.
       x-internal: false
     KeyValuePair:
       type: object
@@ -872,7 +823,7 @@ components:
                       properties:
                         currency:
                           type: string
-                          pattern: ^[A-Z]{3,3}$
+                          pattern: '^[A-Z]{3,3}$'
                         amount:
                           type: number
                           minimum: 0
@@ -899,8 +850,7 @@ components:
                           - text
                           - type
                         title: Message
-                        description: A simple string/type response for returning
-                          information.
+                        description: A simple string/type response for returning information.
                     description:
                       type: string
                       maxLength: 500
@@ -913,7 +863,7 @@ components:
                       properties:
                         currency:
                           type: string
-                          pattern: ^[A-Z]{3,3}$
+                          pattern: '^[A-Z]{3,3}$'
                         amount:
                           type: number
                           minimum: 0
@@ -953,7 +903,7 @@ components:
         - messages
         - carrier_quotes
       title: Rate Response Payload
-      description: The response from the Shipping Service, will contain zero to many quotes.
+      description: 'The response from the Shipping Service, will contain zero to many quotes.'
       x-internal: false
     CarrierQuoteObject:
       type: object
@@ -992,7 +942,7 @@ components:
                 properties:
                   currency:
                     type: string
-                    pattern: ^[A-Z]{3,3}$
+                    pattern: '^[A-Z]{3,3}$'
                   amount:
                     type: number
                     minimum: 0
@@ -1032,7 +982,7 @@ components:
                 properties:
                   currency:
                     type: string
-                    pattern: ^[A-Z]{3,3}$
+                    pattern: '^[A-Z]{3,3}$'
                   amount:
                     type: number
                     minimum: 0
@@ -1151,7 +1101,7 @@ components:
           properties:
             currency:
               type: string
-              pattern: ^[A-Z]{3,3}$
+              pattern: '^[A-Z]{3,3}$'
             amount:
               type: number
               minimum: 0
@@ -1165,7 +1115,7 @@ components:
           properties:
             currency:
               type: string
-              pattern: ^[A-Z]{3,3}$
+              pattern: '^[A-Z]{3,3}$'
             amount:
               type: number
               minimum: 0
@@ -1178,37 +1128,25 @@ components:
           format: int32
         attributes:
           type: array
-          description: A list of arbitrary properties stored as part of the product or
-            product variant meta fields. These consist of any public fields
-            specific to the carrier integration.
+          description: A list of arbitrary properties stored as part of the product or product variant meta fields. These consist of any public fields specific to the carrier integration.
           items:
             type: object
             properties:
               key:
                 type: string
-                description: The key associated with the product or product variant meta
-                  field
+                description: The key associated with the product or product variant meta field
               value:
                 type: string
-                description: The value associated with the product or product variant meta
-                  field
+                description: The value associated with the product or product variant meta field
               namespace:
                 type: string
-                description: The namespace associated with
-                  product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield)
-                  or product variant
-                  (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield)
-                  meta fields. The meta field namespace should be saved under
-                  this format `shipping_carrier_{yourCarrierId}` otherwise it
-                  will not be recognized as an attribute.
+                description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
               resource_type:
                 type: string
                 enum:
                   - product
                   - variant
-                description: Resource type associated with the product or product variant
-                  meta field. Currently the only values available are 'product'
-                  or 'variant'
+                description: Resource type associated with the product or product variant meta field. Currently the only values available are 'product' or 'variant'
               resource_id:
                 type: string
                 description: The resource id of the product or product variant meta field
@@ -1216,8 +1154,7 @@ components:
                 type: string
                 enum:
                   - metafield
-                description: Attribute type associated with the product or product variant
-                  meta field. Currently the only value for this is 'metafield'
+                description: Attribute type associated with the product or product variant meta field. Currently the only value for this is 'metafield'
             title: Attribute Value
       title: Rate Request Item
       x-internal: false
@@ -1285,7 +1222,7 @@ components:
           properties:
             currency:
               type: string
-              pattern: ^[A-Z]{3,3}$
+              pattern: '^[A-Z]{3,3}$'
             amount:
               type: number
               minimum: 0
@@ -1325,7 +1262,7 @@ components:
           properties:
             currency:
               type: string
-              pattern: ^[A-Z]{3,3}$
+              pattern: '^[A-Z]{3,3}$'
             amount:
               type: number
               minimum: 0
@@ -1375,8 +1312,7 @@ components:
       description: Value object for the length of time in transit
       x-internal: false
     AttributeValue:
-      description: Value object for an attribute. This represents a product or product
-        variant meta field.
+      description: Value object for an attribute. This represents a product or product variant meta field.
       type: object
       properties:
         key:
@@ -1387,18 +1323,10 @@ components:
           description: The value associated with the product or product variant meta field
         namespace:
           type: string
-          description: The namespace associated with
-            product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield)
-            or product variant
-            (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield)
-            meta fields. The meta field namespace should be saved under this
-            format `shipping_carrier_{yourCarrierId}` otherwise it will not be
-            recognized as an attribute.
+          description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
         resource_type:
           type: string
-          description: Resource type associated with the product or product variant meta
-            field. Currently the only values available are 'product' or
-            'variant'
+          description: Resource type associated with the product or product variant meta field. Currently the only values available are 'product' or 'variant'
           enum:
             - product
             - variant
@@ -1406,8 +1334,7 @@ components:
           type: string
         attribute_type:
           type: string
-          description: Attribute type associated with the product or product variant meta
-            field. Currently the only value for this is 'metafield'
+          description: Attribute type associated with the product or product variant meta field. Currently the only value for this is 'metafield'
           enum:
             - metafield
       title: Attribute Value
@@ -1418,7 +1345,7 @@ components:
       properties:
         currency:
           type: string
-          pattern: ^[A-Z]{3,3}$
+          pattern: '^[A-Z]{3,3}$'
         amount:
           type: number
           minimum: 0
@@ -1462,12 +1389,10 @@ components:
       title: Weight Value
       x-internal: false
     RateOptionsSchema:
-      description: A set of carrier specific fields that will be displayed to shoppers at
-        checkout
+      description: A set of carrier specific fields that will be displayed to shoppers at checkout
       type: array
       items:
-        description: An individual carrier defined field to display at checkout, along with
-          any defaults and validation
+        description: 'An individual carrier defined field to display at checkout, along with any defaults and validation'
         type: object
         properties:
           code:
@@ -1494,13 +1419,12 @@ components:
             description: A valid default value for this field
             type: string
           value_options:
-            description: For select type fields, the list of available options
+            description: 'For select type fields, the list of available options'
             type: array
             items:
               type: string
           date_ranges:
-            description: For date type fields, a set of valid date ranges available to
-              choose from
+            description: 'For date type fields, a set of valid date ranges available to choose from'
             type: array
             items:
               type: object
@@ -1536,8 +1460,7 @@ components:
       title: Rate Options Schema
       x-internal: false
     KeyValuePairSchema:
-      description: An individual carrier defined field to display at checkout, along with
-        any defaults and validation
+      description: 'An individual carrier defined field to display at checkout, along with any defaults and validation'
       type: object
       properties:
         code:
@@ -1564,13 +1487,12 @@ components:
           description: A valid default value for this field
           type: string
         value_options:
-          description: For select type fields, the list of available options
+          description: 'For select type fields, the list of available options'
           type: array
           items:
             type: string
         date_ranges:
-          description: For date type fields, a set of valid date ranges available to choose
-            from
+          description: 'For date type fields, a set of valid date ranges available to choose from'
           type: array
           items:
             type: object
@@ -1618,7 +1540,7 @@ components:
         zip:
           type: string
           maxLength: 20
-          example: "94105"
+          example: '94105'
         city:
           type: string
           maxLength: 50
@@ -1633,7 +1555,7 @@ components:
           maxLength: 2
           example: US
         address_type:
-          description: Optional, defaults to residential
+          description: 'Optional, defaults to residential'
           type: string
           enum:
             - RESIDENTIAL
@@ -1647,16 +1569,13 @@ components:
       properties:
         connection_options:
           type: object
-          description: Optional, any global request options declared by the carrier and
-            configued by the merchant to retrieve rates
+          description: 'Optional, any global request options declared by the carrier and configued by the merchant to retrieve rates'
           title: Connection Options Instance
       required:
         - connection_options
       title: Check Connection Options Request Payload
-      description: >-
-        The payload sent to a Shipping Provider to check that the store is
-        connected to this provider.
-
+      description: |-
+        The payload sent to a Shipping Provider to check that the store is connected to this provider.
         Each Shipping Provider will have different configurations for the payload.
       x-internal: false
     CheckConnectionOptionsResponsePayload:
@@ -1686,8 +1605,7 @@ components:
             title: Message
             description: A simple string/type response for returning information.
       title: Check Connection Options Response Payload
-      description: The response recieved back from the Shipping Provider connection check
-        this allows the store to understand if the connection was successful.
+      description: The response recieved back from the Shipping Provider connection check this allows the store to understand if the connection was successful.
       x-internal: false
     DateRange:
       type: object
@@ -1753,7 +1671,7 @@ components:
             zip:
               type: string
               maxLength: 20
-              example: "94105"
+              example: '94105'
             city:
               type: string
               maxLength: 50
@@ -1768,7 +1686,7 @@ components:
               maxLength: 2
               example: US
             address_type:
-              description: Optional, defaults to residential
+              description: 'Optional, defaults to residential'
               type: string
               enum:
                 - RESIDENTIAL
@@ -1790,7 +1708,7 @@ components:
             zip:
               type: string
               maxLength: 20
-              example: "94105"
+              example: '94105'
             city:
               type: string
               maxLength: 50
@@ -1805,7 +1723,7 @@ components:
               maxLength: 2
               example: US
             address_type:
-              description: Optional, defaults to residential
+              description: 'Optional, defaults to residential'
               type: string
               enum:
                 - RESIDENTIAL
@@ -1897,7 +1815,7 @@ components:
                 properties:
                   currency:
                     type: string
-                    pattern: ^[A-Z]{3,3}$
+                    pattern: '^[A-Z]{3,3}$'
                   amount:
                     type: number
                     minimum: 0
@@ -1911,7 +1829,7 @@ components:
                 properties:
                   currency:
                     type: string
-                    pattern: ^[A-Z]{3,3}$
+                    pattern: '^[A-Z]{3,3}$'
                   amount:
                     type: number
                     minimum: 0
@@ -1922,9 +1840,7 @@ components:
                 type: number
                 format: int32
               attributes:
-                description: A list of arbitrary properties stored as part of the product
-                  or product variant meta fields. These consist of public fields
-                  specific to the carrier integration.
+                description: A list of arbitrary properties stored as part of the product or product variant meta fields. These consist of public fields specific to the carrier integration.
                 type: array
                 items:
                   type: object
@@ -1938,20 +1854,13 @@ components:
                       description: The value associated with the meta field
                     namespace:
                       type: string
-                      description: The namespace associated with
-                        product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield)
-                        or product variant
-                        (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield)
-                        meta fields. The meta field namespace should be saved
-                        under this format `shipping_carrier_{yourCarrierId}`
-                        otherwise it will not be recognized as an attribute.
+                      description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
                     resource_type:
                       type: string
                       enum:
                         - product
                         - variant
-                      description: Resource type associated with the meta field. Currently
-                        the only values available are 'product' or 'variant'
+                      description: Resource type associated with the meta field. Currently the only values available are 'product' or 'variant'
                     resource_id:
                       type: string
                       description: The resource id of the meta field
@@ -1959,9 +1868,7 @@ components:
                       type: string
                       enum:
                         - metafield
-                      description: Attribute type associated with the product or product
-                        variant meta field. Currently the only value for this is
-                        'metafield'
+                      description: Attribute type associated with the product or product variant meta field. Currently the only value for this is 'metafield'
         customer:
           type: object
           title: Customer Details
@@ -1972,9 +1879,7 @@ components:
               items:
                 type: object
                 title: Customer Group
-                description: The Group (if any) that this customer is in. This will be
-                  default to zero if the customer is not in a group or is a
-                  guest.
+                description: The Group (if any) that this customer is in. This will be default to zero if the customer is not in a group or is a guest.
                 properties:
                   customer_group_id:
                     type: integer
