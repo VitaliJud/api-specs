@@ -1732,13 +1732,14 @@ components:
                 '1234':
                   id: '1234'
                   value: checkbox_selection_1
-              description: Describes custom form field responses. Empty when no custom fields exist. 
+              description: Describes [custom form field responses](/api-reference/storefront/form-fields/form-fields/getformfields). Empty when no custom fields exist. 
               properties:
                 '':
                   type: object
                   description: The ID and value of a custom form field response.
                   properties:
                     id:
+                      description: The ID of a shipping address form field.  
                       type: string
                     value:
                       type: string
