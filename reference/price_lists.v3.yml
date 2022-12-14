@@ -1761,7 +1761,12 @@ paths:
       tags:
         - Price Lists Records
       summary: Get Price Records by Variant
-      description: Returns *Price List Records* using the variant ID. Will also contain currency records.
+        description: |-
+        Returns *Price List Records* using the variant ID. Will also contain currency records.
+        
+        **Notes**
+        * Up to 50 simultaneous GET requests are supported with this API. Running more than the allowed concurrent requests in parallel on the same store will result in a `429` status error and your additional requests will fail.
+        * In order to maximize performance, it's recommended to store Pricelist Records data to reduce the number of calls.
       operationId: getPriceListRecordsByVariantId
       parameters:
         - name: price_list_id
