@@ -450,10 +450,10 @@ paths:
                         map_price: 0
                         tax_class_id: 0
                         product_tax_code: string
-                        channels:
-                          - 1
                         categories:
                           - 0
+                        channels:
+                          - 1
                         brand_id: 0
                         inventory_level: 0
                         inventory_warning_level: 0
