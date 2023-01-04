@@ -238,6 +238,9 @@ paths:
         * attribute_id
         * attribute_value -- This is input as a string, regardless of the [Type](/api-reference/customer-subscribers/v3-customers-api/models/type).
 
+        **Limits**
+        * Limit of 10 concurrent requests 
+        
         **Notes**
 
         A customer can be created with global access or channel-specific access.
