@@ -219,7 +219,7 @@ paths:
           $ref: '#/components/responses/CustomerCollectionResponse'
     post:
       description: |-
-        Creates Customers. Multiple customers can be created in one call. Up to 10 customers can be created in one call.
+        Creates Customers. Create up to 10 customers in one call.
 
         **Required Fields**
         * last_name
@@ -237,9 +237,6 @@ paths:
         * Attributes must be [created](/api-reference/customer-subscribers/v3-customers-api/customer-attributes/customersattributespost) **BEFORE** creating a customer.
         * attribute_id
         * attribute_value -- This is input as a string, regardless of the [Type](/api-reference/customer-subscribers/v3-customers-api/models/type).
-
-        **Limits**
-        * Limit of 10 concurrent requests.
 
         **Notes**
 
