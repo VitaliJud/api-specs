@@ -18046,6 +18046,12 @@ paths:
             Filter items by sku.
           schema:
             type: string
+        - name: upc
+          in: query
+          description: |
+            Filter items by upc.
+          schema:
+            type: string
         - name: page
           in: query
           description: Specifies the page number in a limited (paginated) list of products.
