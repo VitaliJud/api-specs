@@ -1242,6 +1242,11 @@ components:
             - feed
             - link
             - blog
+        url:
+          type: string
+          description: |
+            Relative URL on the storefront for this page.
+          example: /my-store-page
         is_homepage:
           type: boolean
           description: 'Determines whether this page loads at the siteʼs root route. For example, at `https://example.com/`.'
@@ -1401,6 +1406,11 @@ components:
             - blog
             - feed
             - link
+        url:
+          type: string
+          description: |
+            Relative URL on the storefront for this page.
+          example: /my-store-page
         is_homepage:
           type: boolean
           description: 'Determines whether this page loads at the siteʼs root route. For example, at `https://example.com/`.'
