@@ -22,7 +22,7 @@ info:
     ## Additional Information
 
     ### Webhooks
-    - [Shipment](/api-docs/store-management/webhooks/webhook-events#shipment)
+    - [Shipments](/api-docs/store-management/webhooks/webhook-events#shipments)
 
     ### Related API Resources
     - [Shipping Provider](/docs/apps-api/shipping)
